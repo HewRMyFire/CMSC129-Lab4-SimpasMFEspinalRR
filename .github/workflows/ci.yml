@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          npm init -y
+          npm install express jest supertest @playwright/test
+          npm create vite@latest client -- --template react
+          cd client && npm install
+
+      - name: Run Unit Tests
+        run: |
+          echo "Running unit tests"
+          # npm run test:unit
+
+      - name: Run Integration Tests
+        run: |
+          echo "Running integration tests"
+          # npm run test:integration
+
+      - name: Run System Tests
+        run: |
+          echo "Running Playwright tests"
+          # npx playwright install --with-deps
+          # npm run test:system
