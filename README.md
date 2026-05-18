@@ -41,3 +41,28 @@ We are following a strict Red-Green-Refactor TDD cycle. The testing approach is 
 - **Unit Tests:** `npm run test:unit`
 - **Integration Tests:** `npm run test:integration`
 - **System Tests:** `npm run test:system`
+
+## Test Results
+### Unit Tests (Phase 1)
+
+#### Commit 1
+![Validation 1](server/imgs/validation1.png)
+![Test Suites 1](server/imgs/testsuites1.png)
+
+#### Commit 2
+![Validation 2](server/imgs/validation2.png)
+![Test Suites 2](server/imgs/testsuites2.png)
+
+#### Commit 3
+![Validation 3](server/imgs/validation3.png)
+![Test Suites 3](server/imgs/testsuites3.png)
+
+#### Commit 3
+![Validation 4](server/imgs/validation4a.png)
+![Validation 4](server/imgs/validation4b.png)
+![Validation 4](server/imgs/validation4c.png)
+![Validation 4](server/imgs/validation4d.png)
+![Validation 4](server/imgs/validation4e.png)
+![Validation 4](server/imgs/validation4f.png)
+![Test Suites 4](server/imgs/testsuites4.png)
+
