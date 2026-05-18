@@ -1,16 +1,17 @@
 function validateNoteTitle(title) {
-  // Stub returning true so the tests checking for rejection (false) will fail
+  if (!title || typeof title !== 'string' || title.trim() === '') return false;
+  if (title.length > 100) return false;
   return true;
 }
 
 function validateNoteContent(content) {
-  // Stub returning true so the tests checking for rejection (false) will fail
+  if (!content || typeof content !== 'string' || content.trim() === '') return false;
+  if (content.length > 500) return false;
   return true;
 }
 
 function generateNoteId() {
-  // Stub returning a static value so the test checking for uniqueness will fail
-  return "stub-id";
+  return Date.now().toString(36) + Math.random().toString(36).substring(2, 9);
 }
 
 module.exports = {

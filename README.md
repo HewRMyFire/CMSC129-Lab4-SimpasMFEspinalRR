@@ -44,5 +44,11 @@ We are following a strict Red-Green-Refactor TDD cycle. The testing approach is 
 
 ## Test Results
 ### Unit Tests (Phase 1)
+
+#### Commit 1
 ![Validation 1](server/imgs/validation1.png)
 ![Test Suites 1](server/imgs/testsuites1.png)
+
+#### Commit 2
+![Validation 2](server/imgs/validation2.png)
+![Test Suites 2](server/imgs/testsuites2.png)
