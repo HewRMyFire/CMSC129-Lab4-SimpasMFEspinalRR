@@ -52,3 +52,7 @@ We are following a strict Red-Green-Refactor TDD cycle. The testing approach is 
 #### Commit 2
 ![Validation 2](server/imgs/validation2.png)
 ![Test Suites 2](server/imgs/testsuites2.png)
+
+#### Commit 3
+![Validation 3](server/imgs/validation3.png)
+![Test Suites 3](server/imgs/testsuites3.png)
